@@ -177,7 +177,14 @@ nav input:hover {
     background-size: cover;
 }
 
-@media (min-width: 400px) {
+/*****************************************************/
+
+
+
+
+
+
+@media (min-width: 600px) {
     nav {
         height: 100px;
         display: flex;
