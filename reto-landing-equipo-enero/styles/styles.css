@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    
 }
 
 img{
@@ -99,27 +100,21 @@ main>h1{
     flex-direction: column;
     align-items: center;
 }
-
 .card{
     margin: 1rem;
-   
     padding: 1rem;
-    text-align: center;
     width: 40vh;
 }
 
-.card > img{
-    
-    top: 0;
-    left: 0;
-}
-
 .card > h2{
-    font-size:80px ;
+    font-size:70px ;
 }
 
 .card > p{
     color: var(--very-dark-cyan);
+    text-align: center;
+    font-family:var(--fonts-headings);
+    color: grey;
 }
 
 
@@ -132,7 +127,6 @@ main>h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     text-align: center;
 }
 
@@ -173,8 +167,8 @@ main>h1{
     align-items: center;
     text-align: center;
     padding: 2rem;
-    margin-top: 30px;
-    margin-bottom: 50px;
+   
+  
 }
 
 .text-flowing >h2{
@@ -286,10 +280,62 @@ footer{
 }
 
 
+@media  (min-width: 680px){
+    
+
+    .text{
+        max-width: 60%;
+    }
+
+    .content-card{
+        flex-direction: row;
+    }
+
+    #grow-together{
+        flex-direction: row-reverse;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+
+    .respon-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align:left;
+        font-size: 20px;
+        
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .flowing-conversation{
+        flex-direction: row;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .your-users{
+        flex-direction: row-reverse;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    footer{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    footer > div{
+        max-width: 30%;
+        
+    }
 
 
-
-
+}
 
 
 
